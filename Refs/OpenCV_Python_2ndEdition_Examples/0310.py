@@ -9,7 +9,7 @@ direction = 0 # right
 while True:   
     key = cv2.waitKeyEx(30)    
     if key == 0x1B: 
-        break;
+        break
     
 # 방향키 방향전환 
     elif key == 0x270000: # right
@@ -23,13 +23,13 @@ while True:
         
 # 방향으로 이동 
     if direction == 0:     # right
-        x += 10
+        x += 50
     elif direction == 1:   # down
-        y += 10
+        y += 50
     elif direction == 2:   # left
-        x -= 10
+        x -= 50
     else: # 3, up
-        y -= 10
+        y -= 50
         
 #   경계확인 
     if x < R:

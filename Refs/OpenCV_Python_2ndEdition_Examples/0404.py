@@ -3,7 +3,7 @@ import cv2
 ##import numpy as np
 
 img = cv2.imread('./data/lena.jpg') # cv2.IMREAD_COLOR
-img[100, 200] = [255, 0, 0]  # 컬러(BGR) 변경
+img[100, 200] = [0, 0, 255]  # 컬러(BGR) 변경
 print(img[100, 200:210]) # ROI 접근
 
 ##for y in range(100, 400):
